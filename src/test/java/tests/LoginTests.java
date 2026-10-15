@@ -16,4 +16,13 @@ public class LoginTests extends Base {
        homePage.clickLoginButton();
     }
 
+    @Test
+    public void verifyLogin(){
+
+        homePage.clickLoginButton();
+        loginPage.enterUsername("Bongza123@gmail.com");
+        loginPage.enterPassword("Test1234?");
+        loginPage.clickSubmitButton();
+    }
+
 }
